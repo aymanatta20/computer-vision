@@ -1,0 +1,27 @@
+Project Summary
+
+Dataset: Dental images dataset (Teeth Dataset).
+
+Preprocessing:
+
+Rescaled all images to [0,1].
+
+Applied Data Augmentation (rotation, zoom, shift, brightness adjustment, flipping) to increase dataset diversity and improve generalization.
+
+Model (CNN):
+
+Built a Convolutional Neural Network (CNN) from scratch using TensorFlow/Keras.
+
+Architecture includes Conv2D, MaxPooling, and BatchNormalization layers for feature extraction.
+
+Added Dropout and L2 regularization to reduce overfitting.
+
+Output layer matches the number of classes (7 classes).
+
+Training:
+
+Used Adam optimizer and Categorical Crossentropy loss.
+
+Applied EarlyStopping and ReduceLROnPlateau to monitor validation performance and adjust learning rate.
+
+Trained for up to 30 epochs with batch_size=3
