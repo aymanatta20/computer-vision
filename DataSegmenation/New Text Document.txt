@@ -1,0 +1,18 @@
+| **Step**               | **Description**                                                                                                                                                                  |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dataset**            | Collected medical/plant images (`.tif`) and corresponding binary masks (`.png`).                                                                                                 |
+| **Data Preprocessing** | - Resized images & masks to 128×128.<br>- Normalized images to \[0,1].<br>- Converted masks to binary (0/1).                                                                     |
+| **Model Architecture** | Implemented **U-Net** (encoder–decoder CNN) for semantic segmentation.                                                                                                           |
+| **Training**           | - Loss: *Binary Cross-Entropy*.<br>- Optimizer: *Adam*.<br>- Metric: *Accuracy*.                                                                                                 |
+| **Results**            | Model achieved **high training accuracy (\~100%)** on prepared dataset.                                                                                                          |
+| **Evaluation**         | Visualization: compared **Original Image vs. Ground Truth Mask vs. Predicted Mask**.<br> Metrics: planned to compute **IoU** & **Dice coefficient** for quantitative evaluation. |
+| **Visualization**      | Output samples demonstrate accurate segmentation with close alignment between predicted and true masks. 
+📊 Visualization Example
+
+Left → Original Image
+
+Middle → Ground Truth Mask
+
+Right → Predicted Mask
+
+(Shown using matplotlib comparison plots).                                                                         |
